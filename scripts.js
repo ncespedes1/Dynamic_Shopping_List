@@ -85,13 +85,15 @@ shoppingList.addEventListener('click', (event)=> {
 
 //clear completed items from shopping list
 clearCompletedItems.addEventListener('click', ()=>{
-    // console.log(event.target)
     console.log('clear completed btn')
     
     const completedItems = document.querySelectorAll('.completed')
     console.log(completedItems)
     
-    // shoppingList.replaceChild(completedItems)
+    completedItems.forEach(item =>{
+        console.log(item)
+        item.remove()
+    })
 
     totalCounter -= completedCounter
     completedCounter = 0

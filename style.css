@@ -1,12 +1,32 @@
-/* .body{
-    color: blue;
-} */
+body{
+    /* background-color: #e66975; */
+    background-image: url('images/groceries_bg.jpg');
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+}
 
 .list-manager {
-    margin: 20px 0;
+    margin: 40px 40px;
     padding: 20px;
     border: 2px solid #80bbbb;
     border-radius: 10px;
+    background-color: #e0f8f8;
+}
+
+#itemInput {
+    padding: 5px 10px;
+    border: 1px solid #0b6d6d;
+    border-radius: 5px;
+    
+}
+
+#addBtn {
+    background-color: #0b6d6d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .shopping-list {
@@ -29,6 +49,7 @@
 
 .shopping-item:hover {
     background-color: #9de1e4;
+    transform: scale(1.015);
 }
 
 .shopping-item.completed {
@@ -37,22 +58,22 @@
     color: #8e9eae;
 }
 
-.itemText {
+/* .itemText {
     flex-grow: 1;
     margin-right: 10px;
-}
+} */
 
 .remove-btn {
     background-color: #3ca8b2;
     color: white;
     border: none;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .remove-btn:hover {    
-    background-color: #dc3545;
+    background-color: #b23c56;
     color: white;
 }
 
@@ -60,5 +81,13 @@
     margin-top: 15px;
     padding: 10px;
     background-color: #b9e1e7;
+    border-radius: 5px;
+}
+
+#clearCompleted {
+    background-color: #b23c56;
+    color: white;
+    border: none;
+    padding: 5px 10px;
     border-radius: 5px;
 }
