@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="list-manager">
+        <h1>Shopping List</h1>
+        <form id="shoppingForm">
+            <input type="text" id="itemInput" placeholder="What do we need?" required>
+            <button type="submit" id="addBtn" class="button">Add Item</button>
+        </form>
+    <ul id="shoppingList" class="shopping-list">
+        <!-- Tasks will be added dynamically -->
+    </ul>
+    <div id="listStats">
+        <p>Total: <span id="totalCount">0</span> | 
+           Completed: <span id="completedCount">0</span> | 
+           Remaining: <span id="remainingCount">0</span></p>
+           <button type="submit" id="clearCompleted" class="button">Clear Completed Items</button>
+    </div>
+    </div> 
+    <script src="scripts.js"></script>
+</body>
+</html>
